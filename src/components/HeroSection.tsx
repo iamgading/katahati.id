@@ -41,7 +41,7 @@ export default function HeroSection() {
               {/* Main Headline */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance px-2 sm:px-0 animate-fade-in-up">
                 Dengarkan{" "}
-                <span className="text-primary">Kata Hati</span>mu.{" "}
+                <span className="text-primary">Kata Hatimu</span>.{" "}
                 <br className="hidden sm:block" />
                 Kamu Gak Sendirian.
               </h1>
@@ -79,7 +79,7 @@ export default function HeroSection() {
                     <p className="text-2xl font-bold text-accent">
                       2h
                     </p>
-                    <p className="text-xs text-muted-foreground">Respon Time</p>
+                    <p className="text-xs text-muted-foreground">Waktu Respons</p>
                   </div>
                 </div>
               </div>
@@ -95,8 +95,8 @@ export default function HeroSection() {
                 >
                   <Link href="#booking">
                     <div className="flex flex-col items-center sm:items-start">
-                      <span>Mulai Konseling Sekarang</span>
-                      <span className="text-xs opacity-90">Respon dalam 2 jam</span>
+                      <span>Booking Sesi</span>
+                      <span className="text-xs opacity-90">Respons dalam 2 jam</span>
                     </div>
                   </Link>
                 </Button>

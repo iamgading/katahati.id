@@ -128,7 +128,7 @@ export default function ProcessSection() {
           >
             <Link href="#booking">
               <div className="flex flex-col items-center">
-                <span className="text-base sm:text-lg font-bold">Booking Sekarang</span>
+                <span className="text-base sm:text-lg font-bold">Booking Sesi</span>
                 <span className="text-xs opacity-90">Respons dalam 2 jam</span>
               </div>
             </Link>

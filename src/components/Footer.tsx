@@ -131,6 +131,24 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Disclaimer Etika */}
+        <div className="mt-8 sm:mt-10 pt-6 sm:pt-8 border-t border-white/20">
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-5 border border-white/20">
+            <div className="flex items-start gap-3">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-red-500/20 flex items-center justify-center">
+                <span className="text-lg">⚠️</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="font-semibold text-sm sm:text-base mb-1.5 text-white">Disclaimer Penting</h4>
+                <p className="text-xs sm:text-sm text-white/80 leading-relaxed">
+                  Kata Hati tidak menangani kondisi gawat darurat. Jika kamu merasa dalam bahaya atau ingin menyakiti diri, 
+                  segera hubungi layanan darurat terdekat atau <strong className="text-white">Hotline 119</strong> (Kementerian Kesehatan RI).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Bottom Bar */}
         <div className="pt-6 sm:pt-8 border-t border-white/20">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 text-center sm:text-left">
