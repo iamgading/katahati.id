@@ -1,8 +1,5 @@
 "use client";
 
-import dynamic from 'next/dynamic';
-
-// Static imports for non-interactive sections
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import EmpathySection from "@/components/EmpathySection";
@@ -10,17 +7,15 @@ import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
 import WhyChooseSection from "@/components/WhyChooseSection";
 import ProcessSection from "@/components/ProcessSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+// import QuizSection from "@/components/QuizSection"; // Temporarily disabled
 import ArticlesSection from "@/components/ArticlesSection";
+import FAQSection from "@/components/FAQSection";
+import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
-
-// Dynamic imports for interactive components (disable SSR to prevent hydration errors)
-const TestimonialsSection = dynamic(() => import("@/components/TestimonialsSection"), { ssr: false });
-const QuizSection = dynamic(() => import("@/components/QuizSection"), { ssr: false });
-const FAQSection = dynamic(() => import("@/components/FAQSection"), { ssr: false });
-const CTASection = dynamic(() => import("@/components/CTASection"), { ssr: false });
-const FloatingWhatsApp = dynamic(() => import("@/components/FloatingWhatsApp"), { ssr: false });
-const ExitIntentPopup = dynamic(() => import("@/components/ExitIntentPopup"), { ssr: false });
-const ScrollToTop = dynamic(() => import("@/components/ScrollToTop"), { ssr: false });
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+// import ExitIntentPopup from "@/components/ExitIntentPopup"; // Temporarily disabled
+// import ScrollToTop from "@/components/ScrollToTop"; // Temporarily disabled
 
 export default function Home() {
   return (
@@ -42,9 +37,10 @@ export default function Home() {
         <div id="testimoni">
           <TestimonialsSection />
         </div>
-        <div id="tes-singkat">
+        {/* Temporarily disabled - QuizSection */}
+        {/* <div id="tes-singkat">
           <QuizSection />
-        </div>
+        </div> */}
         <div id="artikel">
           <ArticlesSection />
         </div>
@@ -57,8 +53,8 @@ export default function Home() {
       </main>
       <Footer />
       <FloatingWhatsApp />
-      <ScrollToTop />
-      <ExitIntentPopup />
+      {/* <ScrollToTop /> */}
+      {/* <ExitIntentPopup /> */}
     </>
   );
 }
