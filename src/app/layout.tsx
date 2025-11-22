@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import dynamic from 'next/dynamic';
-
-// Disable SSR for ScrollReveal to prevent hydration issues
-const ScrollReveal = dynamic(() => import("@/components/ScrollReveal"), { ssr: false });
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -45,7 +41,6 @@ export default function RootLayout({
         className={`${plusJakartaSans.variable} font-sans antialiased`}
         suppressHydrationWarning
       >
-        <ScrollReveal />
         {children}
       </body>
     </html>
