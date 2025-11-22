@@ -41,6 +41,7 @@ export default function RootLayout({
     <html lang="id" className="scroll-smooth" suppressHydrationWarning>
       <body
         className={`${plusJakartaSans.variable} font-sans antialiased`}
+        suppressHydrationWarning
       >
         <ScrollReveal />
         {children}

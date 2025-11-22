@@ -57,7 +57,7 @@ export default function HeroSection() {
                 <div className="flex items-center gap-2 bg-white/80 dark:bg-card/80 backdrop-blur-sm rounded-xl px-4 py-3 border border-border/50 shadow-sm hover-scale">
                   <Users className="w-5 h-5 text-primary" />
                   <div>
-                    <p className="text-2xl font-bold text-primary">
+                    <p className="text-2xl font-bold text-primary" suppressHydrationWarning>
                       <AnimatedCounter end={200} suffix="+" />
                     </p>
                     <p className="text-xs text-muted-foreground">Klien Puas</p>
@@ -67,7 +67,7 @@ export default function HeroSection() {
                 <div className="flex items-center gap-2 bg-white/80 dark:bg-card/80 backdrop-blur-sm rounded-xl px-4 py-3 border border-border/50 shadow-sm hover-scale">
                   <Heart className="w-5 h-5 text-secondary" />
                   <div>
-                    <p className="text-2xl font-bold text-secondary">
+                    <p className="text-2xl font-bold text-secondary" suppressHydrationWarning>
                       <AnimatedCounter end={5} suffix="+" />
                     </p>
                     <p className="text-xs text-muted-foreground">Tahun Pengalaman</p>
@@ -77,7 +77,7 @@ export default function HeroSection() {
                 <div className="flex items-center gap-2 bg-white/80 dark:bg-card/80 backdrop-blur-sm rounded-xl px-4 py-3 border border-border/50 shadow-sm hover-scale">
                   <Clock className="w-5 h-5 text-accent" />
                   <div>
-                    <p className="text-2xl font-bold text-accent">
+                    <p className="text-2xl font-bold text-accent" suppressHydrationWarning>
                       <AnimatedCounter end={2} />h
                     </p>
                     <p className="text-xs text-muted-foreground">Respon Time</p>
