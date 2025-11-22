@@ -1,3 +1,5 @@
+"use client";
+
 import dynamic from 'next/dynamic';
 
 // Static imports for non-interactive sections
