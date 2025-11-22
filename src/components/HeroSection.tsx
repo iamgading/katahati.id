@@ -96,7 +96,7 @@ export default function HeroSection() {
                   <Link href="#booking">
                     <div className="flex flex-col items-center sm:items-start">
                       <span>Booking Sesi</span>
-                      <span className="text-xs opacity-90">Respons dalam 2 jam</span>
+                      <span className="text-xs opacity-90">Respon dalam 2 jam</span>
                     </div>
                   </Link>
                 </Button>

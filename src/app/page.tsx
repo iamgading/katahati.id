@@ -66,7 +66,7 @@ export default function Home() {
                 >
                   <div className="flex flex-col items-center">
                     <span className="text-lg sm:text-xl font-bold">Booking Sesi</span>
-                    <span className="text-xs sm:text-sm opacity-90 font-normal">Respons dalam 2 jam</span>
+                    <span className="text-xs sm:text-sm opacity-90 font-normal">Respon dalam 2 jam</span>
                   </div>
                 </Link>
               </Button>
