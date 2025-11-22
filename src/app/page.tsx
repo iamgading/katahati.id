@@ -14,6 +14,8 @@ import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 // import ExitIntentPopup from "@/components/ExitIntentPopup"; // Temporarily disabled
 // import ScrollToTop from "@/components/ScrollToTop"; // Temporarily disabled
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -53,15 +55,21 @@ export default function Home() {
             </p>
             
             <div className="flex justify-center">
-              <a 
-                href="https://wa.me/6289654061718?text=Halo%20Kata%20Hati,%20saya%20ingin%20booking%20sesi%20konseling"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex flex-col items-center justify-center h-14 sm:h-16 px-8 sm:px-10 rounded-full bg-primary text-white shadow-lg shadow-primary/25 hover:bg-primary/90 transition-all hover:scale-105 animate-glow-pulse"
+              <Button
+                asChild
+                size="lg"
+                className="h-14 sm:h-16 px-8 sm:px-10 text-base sm:text-lg bg-primary text-white shadow-lg shadow-primary/25 btn-primary-hover w-full sm:w-auto animate-glow-pulse rounded-full"
               >
-                <span className="text-lg sm:text-xl font-bold">Booking Sesi Sekarang</span>
-                <span className="text-xs sm:text-sm opacity-90 font-normal">Respon dalam 2 jam</span>
-              </a>
+                <Link 
+                  href="https://wa.me/6289654061718?text=Halo%20Kata%20Hati,%20saya%20ingin%20booking%20sesi%20konseling"
+                  target="_blank"
+                >
+                  <div className="flex flex-col items-center">
+                    <span className="text-lg sm:text-xl font-bold">Booking Sesi Sekarang</span>
+                    <span className="text-xs sm:text-sm opacity-90 font-normal">Respon dalam 2 jam</span>
+                  </div>
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
