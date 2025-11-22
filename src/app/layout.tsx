@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import dynamic from 'next/dynamic';
+
+// Disable SSR for ScrollReveal to prevent hydration issues
+const ScrollReveal = dynamic(() => import("@/components/ScrollReveal"), { ssr: false });
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -29,8 +33,6 @@ export const metadata: Metadata = {
     canonical: '/',
   },
 };
-
-import ScrollReveal from "@/components/ScrollReveal";
 
 export default function RootLayout({
   children,
