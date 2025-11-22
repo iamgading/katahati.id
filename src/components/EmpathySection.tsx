@@ -34,9 +34,7 @@ export default function EmpathySection() {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary mb-3 sm:mb-4">
             Apakah kamu sering merasa seperti ini?
           </h2>
-          <p className="text-sm text-muted-foreground">
-            <span className="font-bold text-primary">200+ klien</span> sudah merasakan ruang aman untuk bicara
-          </p>
+
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6 mb-6 sm:mb-8 lg:mb-12">
