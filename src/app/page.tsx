@@ -46,20 +46,23 @@ export default function Home() {
           <FAQSection />
         </div>
         <div id="booking" className="py-20 bg-gradient-to-br from-primary/10 via-muted/30 to-secondary/10 text-center px-4">
-          {/* <CTASection /> - Temporarily disabled due to render loop */}
-          <div className="max-w-3xl mx-auto space-y-8">
+          <div className="max-w-3xl mx-auto space-y-8 animate-fade-in-up">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">Siap untuk Bercerita?</h2>
             <p className="text-lg text-muted-foreground">
               Jangan biarkan masalahmu berlarut. Yuk, ngobrol dengan psikolog kami sekarang.
             </p>
-            <a 
-              href="https://wa.me/6289654061718?text=Halo%20Kata%20Hati,%20saya%20ingin%20booking%20sesi%20konseling"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center h-14 px-8 rounded-full bg-primary text-white font-bold text-lg shadow-lg hover:bg-primary/90 transition-all hover:scale-105"
-            >
-              Booking via WhatsApp Sekarang
-            </a>
+            
+            <div className="flex justify-center">
+              <a 
+                href="https://wa.me/6289654061718?text=Halo%20Kata%20Hati,%20saya%20ingin%20booking%20sesi%20konseling"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex flex-col items-center justify-center h-14 sm:h-16 px-8 sm:px-10 rounded-full bg-primary text-white shadow-lg shadow-primary/25 hover:bg-primary/90 transition-all hover:scale-105 animate-glow-pulse"
+              >
+                <span className="text-lg sm:text-xl font-bold">Booking Sesi Sekarang</span>
+                <span className="text-xs sm:text-sm opacity-90 font-normal">Respon dalam 2 jam</span>
+              </a>
+            </div>
           </div>
         </div>
       </main>
