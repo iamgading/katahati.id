@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Shield, Video, Heart, Users, Clock } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import AnimatedCounter from "@/components/AnimatedCounter";
 import FloatingParticles from "@/components/FloatingParticles";
 
 export default function HeroSection() {
@@ -52,13 +51,13 @@ export default function HeroSection() {
                 Online & offline. <span className="font-semibold text-foreground">Privasi 100% terjaga</span>.
               </p>
               
-              {/* Animated Statistics */}
+              {/* Static Statistics to fix hydration error */}
               <div className="flex flex-wrap gap-6 justify-center lg:justify-start px-2 sm:px-0 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
                 <div className="flex items-center gap-2 bg-white/80 dark:bg-card/80 backdrop-blur-sm rounded-xl px-4 py-3 border border-border/50 shadow-sm hover-scale">
                   <Users className="w-5 h-5 text-primary" />
                   <div>
-                    <p className="text-2xl font-bold text-primary" suppressHydrationWarning>
-                      <AnimatedCounter end={200} suffix="+" />
+                    <p className="text-2xl font-bold text-primary">
+                      200+
                     </p>
                     <p className="text-xs text-muted-foreground">Klien Puas</p>
                   </div>
@@ -67,8 +66,8 @@ export default function HeroSection() {
                 <div className="flex items-center gap-2 bg-white/80 dark:bg-card/80 backdrop-blur-sm rounded-xl px-4 py-3 border border-border/50 shadow-sm hover-scale">
                   <Heart className="w-5 h-5 text-secondary" />
                   <div>
-                    <p className="text-2xl font-bold text-secondary" suppressHydrationWarning>
-                      <AnimatedCounter end={5} suffix="+" />
+                    <p className="text-2xl font-bold text-secondary">
+                      5+
                     </p>
                     <p className="text-xs text-muted-foreground">Tahun Pengalaman</p>
                   </div>
@@ -77,8 +76,8 @@ export default function HeroSection() {
                 <div className="flex items-center gap-2 bg-white/80 dark:bg-card/80 backdrop-blur-sm rounded-xl px-4 py-3 border border-border/50 shadow-sm hover-scale">
                   <Clock className="w-5 h-5 text-accent" />
                   <div>
-                    <p className="text-2xl font-bold text-accent" suppressHydrationWarning>
-                      <AnimatedCounter end={2} />h
+                    <p className="text-2xl font-bold text-accent">
+                      2h
                     </p>
                     <p className="text-xs text-muted-foreground">Respon Time</p>
                   </div>
