@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
@@ -117,6 +117,16 @@ export default function CTASection() {
         return false;
     }
   };
+
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null; // or a loading skeleton
+  }
 
   return (
     <section id="booking" className="py-10 sm:py-12 lg:py-24 pb-24 sm:pb-28 bg-gradient-to-br from-primary/10 via-muted/30 to-secondary/10 scroll-mt-16">
